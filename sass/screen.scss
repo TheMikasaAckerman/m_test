@@ -138,3 +138,85 @@ padding: 20px 12px 0;
 	}
 }
 
+
+
+
+.card {
+	display: block;
+	padding-top: 4px;
+	padding-bottom: 8px;
+	&-border_grey{
+		border-bottom: 1px solid $text-light-grey;
+		padding-bottom: 4px;
+	}
+
+
+	&__img {
+		width: 100%;
+		min-width: 100%;
+
+		display:block;
+	}
+	&-pad-l-none{
+		padding-left: 0px;
+	}
+	&-pad_l_4px{
+		padding-left: 8px;
+		padding-right: 12px;
+	}
+	&_text__date {
+		font-weight: $light;
+		// font-size: 70%;
+		color: $text-light-grey;
+	}
+	&_text__name {
+		// font-size: 120%;
+		margin-top: 2px;
+	}
+	&_text__price {
+		// font-size: 85%;
+		color: $red;
+		font-weight: $semibold;
+		margin-top: 4px;
+	}
+	&_text__other {
+		margin-top: 6px;
+
+		li {
+			display: inline-block;
+			// font-size: 85%;
+		
+		}
+	}
+
+}
+
+.menu_block {
+	background-color: $bg-color-white;
+	color:$bg-color-black;
+	&-white {
+		color: $bg-color-white;
+	}
+	&__li {
+		padding-top: 4px;
+		padding-bottom: 4px;
+		border-top: 1px solid $text-medium-grey;
+
+		>a {
+			color: $bg-color-black;
+		}
+	}
+}
+
+.ned_h1 {
+	background-color: $text-medium-grey;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 8px;
+	
+	font-weight: $semibold;
+	>p {
+		
+	}
+}
+

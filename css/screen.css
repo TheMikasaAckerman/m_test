@@ -227,3 +227,82 @@ a {
   text-align: center;
   display: block;
 }
+
+/* line 144, ../sass/screen.scss */
+.card {
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+/* line 148, ../sass/screen.scss */
+.card-border_grey {
+  border-bottom: 1px solid #C9C9C9;
+  padding-bottom: 4px;
+}
+/* line 154, ../sass/screen.scss */
+.card__img {
+  width: 100%;
+  min-width: 100%;
+  display: block;
+}
+/* line 160, ../sass/screen.scss */
+.card-pad-l-none {
+  padding-left: 0px;
+}
+/* line 163, ../sass/screen.scss */
+.card-pad_l_4px {
+  padding-left: 8px;
+  padding-right: 12px;
+}
+/* line 167, ../sass/screen.scss */
+.card_text__date {
+  font-weight: 300;
+  color: #C9C9C9;
+}
+/* line 172, ../sass/screen.scss */
+.card_text__name {
+  margin-top: 2px;
+}
+/* line 176, ../sass/screen.scss */
+.card_text__price {
+  color: #f33535;
+  font-weight: 600;
+  margin-top: 4px;
+}
+/* line 182, ../sass/screen.scss */
+.card_text__other {
+  margin-top: 6px;
+}
+/* line 185, ../sass/screen.scss */
+.card_text__other li {
+  display: inline-block;
+}
+
+/* line 194, ../sass/screen.scss */
+.menu_block {
+  background-color: #ffffff;
+  color: #000000;
+}
+/* line 197, ../sass/screen.scss */
+.menu_block-white {
+  color: #ffffff;
+}
+/* line 200, ../sass/screen.scss */
+.menu_block__li {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-top: 1px solid #999999;
+}
+/* line 205, ../sass/screen.scss */
+.menu_block__li > a {
+  color: #000000;
+}
+
+/* line 211, ../sass/screen.scss */
+.ned_h1 {
+  background-color: #999999;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 8px;
+  font-weight: 600;
+}
