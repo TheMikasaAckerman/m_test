@@ -1,0 +1,59 @@
+@font-face {
+font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Medium.ttf");
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-SemiBold.ttf");
+  font-weight: semibold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+// начертания шрифтов
+$light: 300;
+$regular: 500;
+$semibold: 600;
+
+// основной шрифт
+$base-font-family: sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+
+// заголовки
+$header-font-weight: $semibold;
+
+
+h1 {
+	font-size: 18px;
+	font-weight: $semibold;
+}
+
+// Размеры
+// 100	Ultra Light
+// 200	Thin
+// 300	Light
+// 400	Regular, Normal
+// 500	Roman
+// 600	Medium, SemiBold
+// 700	Bold
+// 800	Heavy, ExtraBold
+// 900	Black
