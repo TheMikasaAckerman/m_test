@@ -10,7 +10,8 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
-	font-size: 14px;
+	font-size: 87.5%;
+	// 14px;
 	color: $text-white;
 	font-weight: 500;
 }
@@ -47,7 +48,7 @@ a {color: #ffffff;}
 .city {
 	&__select {
 		padding: 12px 0 0 16px;
-		font-size: 13px;
+		font-size: 0.9286em;
 		background: url('../img/city_pin.png') 0 10px no-repeat;
 
 	}

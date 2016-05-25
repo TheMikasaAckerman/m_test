@@ -35,7 +35,7 @@ $semibold: 600;
 // основной шрифт
 $base-font-family: sans-serif;
 $base-font-weight: $regular;
-$base-font-size: 13px;
+$base-font-size: 87.5%;
 $base-line-height: 1.4;
 
 // заголовки
@@ -43,7 +43,7 @@ $header-font-weight: $semibold;
 
 
 h1 {
-	font-size: 18px;
+	font-size: 1.2857em;
 	font-weight: $semibold;
 }
 
