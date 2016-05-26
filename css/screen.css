@@ -109,42 +109,51 @@ body {
 a {
   color: #ffffff;
 }
+/* line 20, ../sass/screen.scss */
+a:hover {
+  color: #ffffff;
+}
 
-/* line 21, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 .main {
   background-color: #000000;
   width: 100%;
   height: 100%;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 .header__h1 {
   margin-top: 24px;
   margin-bottom: 24px;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 .header__h1-center {
   text-align: center;
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .logo {
   padding-top: 7px;
 }
 
-/* line 49, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .city__select {
   padding: 12px 0 0 16px;
   font-size: 0.9286em;
   background: url("../img/city_pin.png") 0 10px no-repeat;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .slider {
+  width: 100%;
+  height: auto;
+}
+/* line 67, ../sass/screen.scss */
+.slider__nav {
   padding: 0 4px;
 }
-/* line 64, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .slider__li {
   background-color: #2B2A29;
   border-top: 4px solid #2B2A29;
@@ -153,32 +162,41 @@ a {
   height: 44px;
   width: 33.333%;
 }
-/* line 71, ../sass/screen.scss */
-.slider__li-active {
+
+/* line 81, ../sass/screen.scss */
+.slider > ul > li.active {
   border-top: 4px solid #f33535;
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .slider__li:first-child {
   border-left: none;
 }
 
-/* line 80, ../sass/screen.scss */
-.nav > li > a:focus, .nav > li > a:hover, .nav-tabs > li > a:hover {
+/* line 92, ../sass/screen.scss */
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   background-color: #2B2A29;
   border: none;
+  border-bottom: 0px;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
+.nav > li > a {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* line 104, ../sass/screen.scss */
 .tab_body {
   background-color: #2B2A29;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .find {
   padding: 20px 12px 0;
 }
-/* line 93, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .find__input {
   width: 84%;
   padding: 0 0 0 4%;
@@ -188,7 +206,7 @@ a {
   background-color: #3d3a3a;
   float: left;
 }
-/* line 102, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 .find__submit {
   width: 16%;
   height: 30px;
@@ -197,30 +215,30 @@ a {
   float: left;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .menu__li {
   height: 120px;
   text-align: center;
   border-left: 1px solid #3d3c3b;
   border-bottom: 1px solid #3d3c3b;
 }
-/* line 118, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .menu__img {
   margin-top: 40px;
   margin-bottom: 5px;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .menu__li:nth-child(2n+1) {
   border-left: none;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .clear {
   clear: both;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .region__btn {
   padding: 16px 0;
   width: 100%;
@@ -228,81 +246,74 @@ a {
   display: block;
 }
 
-/* line 144, ../sass/screen.scss */
-.card {
-  display: block;
-  padding-top: 4px;
-  padding-bottom: 8px;
-}
-/* line 148, ../sass/screen.scss */
-.card-border_grey {
-  border-bottom: 1px solid #C9C9C9;
-  padding-bottom: 4px;
-}
-/* line 154, ../sass/screen.scss */
-.card__img {
+/* line 161, ../sass/screen.scss */
+.btn {
   width: 100%;
-  min-width: 100%;
+  padding: 4% 0;
+  text-align: center;
+  color: #f33535;
+  font-size: 1em;
   display: block;
 }
-/* line 160, ../sass/screen.scss */
-.card-pad-l-none {
-  padding-left: 0px;
-}
-/* line 163, ../sass/screen.scss */
-.card-pad_l_4px {
-  padding-left: 8px;
-  padding-right: 12px;
-}
-/* line 167, ../sass/screen.scss */
-.card_text__date {
-  font-weight: 300;
-  color: #C9C9C9;
-}
-/* line 172, ../sass/screen.scss */
-.card_text__name {
-  margin-top: 2px;
-}
-/* line 176, ../sass/screen.scss */
-.card_text__price {
-  color: #f33535;
-  font-weight: 600;
-  margin-top: 4px;
-}
-/* line 182, ../sass/screen.scss */
-.card_text__other {
-  margin-top: 6px;
-}
-/* line 185, ../sass/screen.scss */
-.card_text__other li {
-  display: inline-block;
+/* line 168, ../sass/screen.scss */
+.btn__filter {
+  border-bottom: 1px solid #cccccc;
 }
 
-/* line 194, ../sass/screen.scss */
-.menu_block {
-  background-color: #ffffff;
-  color: #000000;
+/* line 176, ../sass/screen.scss */
+.cards {
+  background: #ffffff;
 }
-/* line 197, ../sass/screen.scss */
-.menu_block-white {
-  color: #ffffff;
+/* line 178, ../sass/screen.scss */
+.cards__li {
+  border-bottom: 1px solid #cccccc;
+  padding: 2% 2%;
+}
+
+/* line 185, ../sass/screen.scss */
+.card {
+  float: left;
+}
+/* line 188, ../sass/screen.scss */
+.card__img {
+  width: 37.5%;
+  height: auto;
+}
+/* line 196, ../sass/screen.scss */
+.card__text {
+  width: 58%;
+  margin-left: 3%;
+  color: #000000;
 }
 /* line 200, ../sass/screen.scss */
-.menu_block__li {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  border-top: 1px solid #999999;
+.card__text-date {
+  font-size: 12px;
+  font-weight: 500;
+  color: #999999;
 }
 /* line 205, ../sass/screen.scss */
-.menu_block__li > a {
-  color: #000000;
-}
-
-/* line 211, ../sass/screen.scss */
-.ned_h1 {
-  background-color: #999999;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 8px;
+.card__text-name {
+  font-size: 13px;
   font-weight: 600;
+  color: #000000;
+  margin-top: 3%;
+}
+/* line 211, ../sass/screen.scss */
+.card__text-price {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f33535;
+  margin-top: 3%;
+}
+/* line 217, ../sass/screen.scss */
+.card__text-character {
+  margin-left: -4%;
+  margin-top: 6%;
+}
+/* line 220, ../sass/screen.scss */
+.card__text-character li {
+  font-size: 12px;
+  color: #000000;
+  float: left;
+  margin-left: 4%;
 }

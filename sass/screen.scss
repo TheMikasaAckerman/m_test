@@ -16,7 +16,10 @@ body {
 	font-weight: 500;
 }
 
-a {color: #ffffff;}
+a {color: #ffffff;
+	&:hover {
+		color:#ffffff;
+	}}
 
 .main {
 	background-color: #000000;
@@ -59,8 +62,12 @@ a {color: #ffffff;}
 }
 
 .slider {
-	padding: 0 4px;
-	
+		width: 100%;
+		height: auto;
+	&__nav {
+		padding: 0 4px;
+	}
+
 	&__li{
 		background-color: $bg-color-dark-grey;
 		border-top: 4px solid $bg-color-dark-grey;
@@ -68,19 +75,31 @@ a {color: #ffffff;}
 		border-bottom: 4px solid $bg-color-dark-grey;
 		height: 44px;
 		width: 33.333%;
-		&-active {
-			border-top: 4px solid $red;
-		}
+
 	}
 }
+.slider>ul>li.active {
+			border-top: 4px solid $red;
+		}
 .slider__li:first-child {
 			border-left: none;
 		}
 
-.nav>li>a:focus, .nav>li>a:hover, .nav-tabs>li>a:hover {
-		background-color: $bg-color-dark-grey;
-		border:none; 
-}	
+// .nav>li>a:focus, .nav>li>a:hover, .nav-tabs>li>a:hover {
+// 		background-color: $bg-color-dark-grey;
+// 		border:none; 
+// }	
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background-color: $bg-color-dark-grey;
+	border:none; 
+	border-bottom: 0px;
+}
+
+.nav > li > a {
+	width: 100%;
+	padding: 10px 0;
+	text-align: center
+}
 
 .tab_body {
 	background-color: $bg-color-dark-grey;
@@ -138,85 +157,73 @@ padding: 20px 12px 0;
 	}
 }
 
+// Кнопка фильтров
+.btn {
+	width: 100%;
+	padding: 4% 0;
+	text-align: center;
+	color: $red;
+	font-size: 1em;
+	display: block;
+	&__filter {
+		border-bottom: 1px solid $grey-border; 
+	}
+}
 
 
+// Карточки вертска
+
+.cards {
+	background: $bg-color-white;
+	&__li {
+		border-bottom: 1px solid $grey-border;
+		padding: 2% 2%;
+	}
+	
+}
 
 .card {
-	display: block;
-	padding-top: 4px;
-	padding-bottom: 8px;
-	&-border_grey{
-		border-bottom: 1px solid $text-light-grey;
-		padding-bottom: 4px;
-	}
-
+	float: left;
 
 	&__img {
-		width: 100%;
-		min-width: 100%;
-
-		display:block;
+		width: 37.5%;
+		height: auto;
+		// &-size {
+		// 	width: 100%;
+		// 	display: block;
+		// }
 	}
-	&-pad-l-none{
-		padding-left: 0px;
-	}
-	&-pad_l_4px{
-		padding-left: 8px;
-		padding-right: 12px;
-	}
-	&_text__date {
-		font-weight: $light;
-		// font-size: 70%;
-		color: $text-light-grey;
-	}
-	&_text__name {
-		// font-size: 120%;
-		margin-top: 2px;
-	}
-	&_text__price {
-		// font-size: 85%;
-		color: $red;
-		font-weight: $semibold;
-		margin-top: 4px;
-	}
-	&_text__other {
-		margin-top: 6px;
-
-		li {
-			display: inline-block;
-			// font-size: 85%;
-		
+	&__text {
+		width: 58%;
+		margin-left: 3%; 
+		color: #000000;
+		&-date {
+			font-size: 12px;
+			font-weight: 500;
+			color: $text-medium-grey;
 		}
-	}
+		&-name {
+			font-size: 13px;
+			font-weight: 600;
+			color: $text-black;
+			margin-top: 3%;
+		}
+		&-price {
+			font-size: 13px;
+			font-weight: 600;
+			color: $red;
+			margin-top: 3%;
+		}
+		&-character {
+			margin-left: -4%;
+			margin-top: 6%;
+			& li {
+				font-size: 12px;
+				color: $text-black;
+				float: left;
+				margin-left: 4%;
 
-}
-
-.menu_block {
-	background-color: $bg-color-white;
-	color:$bg-color-black;
-	&-white {
-		color: $bg-color-white;
-	}
-	&__li {
-		padding-top: 4px;
-		padding-bottom: 4px;
-		border-top: 1px solid $text-medium-grey;
-
-		>a {
-			color: $bg-color-black;
+			}
 		}
 	}
 }
-
-.ned_h1 {
-	background-color: $text-medium-grey;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-left: 8px;
-	
-	font-weight: $semibold;
-	>p {
-		
-	}
-}
-

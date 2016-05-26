@@ -8,8 +8,8 @@
     <title>Gigzone</title>
 
     <!-- Bootstrap -->
-    <!-- <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="./assets/bootstrap/css/bootstrap.css" rel="stylesheet"> 
+   <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
     <link href="./css/screen.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -33,27 +33,29 @@
           </div>
         </div>
         <h1 class="header__h1 header__h1-center">Сайт бесплатных объявлений</h1>
-        </div>
-        <div class="slider">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="slider__li slider__li-active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Меню</a></li>
-              <li role="presentation" class="slider__li"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Объявления</a></li>
-              <li role="presentation"class="slider__li"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Кабинет</a></li>
-            </ul>
+      </div>
+      <div class="slider">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs slider__nav" role="tablist">
+          <li role="presentation" class="slider__li active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Меню</a></li>
+          <li role="presentation" class="slider__li"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Объявления</a></li>
+          <li role="presentation"class="slider__li"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Каб</a></li>
+        </ul>    
 
-            <!-- Tab panes -->
+<!-- Tab panes -->
             <div class="tab-content tab_body">
+
+<!-- Контент табов, 1 блок -->
               <div role="tabpanel" class="tab-pane active" id="home">
 
-              <!-- Форма поиска -->
+                <!-- Форма поиска -->
                 <div class="find">
                   <form>
-                    <input class="find__input" type="text" placeholder="Поиск по Северобайкальску"></input>
+                    <input class="find__input" type="text" placeholder="Поиск по Северобайкальску">
                     <input class="find__submit" type="submit" value="ок">
                   </form>
                 </div>
-              <!-- Каталог -->
+                <!-- Каталог -->
                 <div class="menu">
                   <ul class="menu__ul">
                     <li class="col-xs-6 menu__li">
@@ -92,97 +94,184 @@
                         <p>Магазины</p>
                       </a>
                     </li>
+                    <li class="clearfix"></li>
                   </ul>
                 </div>
-                <div class="clear"></div>
               </div>
+
+<!-- Контент табов, 2 блок -->
               <div role="tabpanel" class="tab-pane" id="profile">
-                <a href="" class="filter_btn"></a>
-                <ul class="supply">
-                  <li class="supply__li supply__li-active"></li>
-                  <li class="supply__li">
-                    
-                    <a href="" class="card">
-                      <div class="container card-border_grey">
-                        <div class="row">
-                          <div class="col-xs-4 col-sm-4 card-pad_l_4px">
-                            <img class="card__img" src="./img/car-1.jpg">
-                          </div>
-                          <div class="col-xs-8 col-sm-8 card__card_text card-pad-l-none">
-                            <span class="card_text__date">21.12.16</span>
-                            <h2 class="card_text__name">Mercedes-Benz E-Class</h2>
-                            <p class="card_text__price">1 250 000 руб.</p>
-                            <ul class="card_text__other">
-                              <li>2006 г.в.</li>
-                              <li>246 л.с.</li>
-                              <li>101 км</li>
-                            </ul>
-                          </div>
-                        </div>  
+                <h2>Автомобили</h2>
+                
+                <div class="cards">
+                  <a href="" class="btn btn__filter">Фильтры</a>
+
+                  <div class="cards__li col-xs-12 col-sm-6">
+                    <a href="" class="">
+                      <div class="card card__img card__img-style">
+                        <img class="card__img-size img-responsive" src="./img/car-1.jpg">
+                      </div>
+                      <div class="card card__text card-style">
+                        <span class="card__text-date">21.12.16</span>
+                          <h2 class="card__text-name">Mercedes-Benz E-Class zupper automobile Deutsch</h2>
+                          <p class="card__text-price">1 250 000 руб.</p>
+                          <ul class="card__text-character">
+                            <li>2006 г.в.</li>
+                            <li>246 л.с.</li>
+                            <li>101 км</li>
+                          </ul>
                       </div>
                     </a>
-
-                  </li>
-                  <li class="supply__li">
-                    
-                    <a href="" class="card">
-                      <div class="container card-border_grey">
-                        <div class="row">
-                          <div class="col-xs-4 col-sm-4 card-pad_l_4px">
-                            <img class="card__img" src="./img/car-1.jpg">
-                          </div>
-                          <div class="col-xs-8 col-sm-8 card__card_text card-pad-l-none">
-                            <span class="card_text__date">21.12.16</span>
-                            <h2 class="card_text__name">Mercedes-Benz E-Class</h2>
-                            <p class="card_text__price">1 250 000 руб.</p>
-                            <ul class="card_text__other">
-                              <li>2006 г.в.</li>
-                              <li>246 л.с.</li>
-                              <li>101 км</li>
-                            </ul>
-                          </div>
-                        </div>  
+                  </div>
+                  <div class="clearfix visible-xs-block"></div>
+                  <div class="cards__li col-xs-12 col-sm-6">
+                    <a href="" class="">
+                      <div class="card card__img card__img-style">
+                        <img class="card__img-size img-responsive" src="./img/car-1.jpg">
+                      </div>
+                      <div class="card card__text card-style">
+                        <span class="card__text-date">21.12.16</span>
+                          <h2 class="card__text-name">Mercedes-Benz E-Class zupper automobile Deutsch</h2>
+                          <p class="card__text-price">1 250 000 руб.</p>
+                          <ul class="card__text-character">
+                            <li>2006 г.в.</li>
+                            <li>246 л.с.</li>
+                            <li>101 км</li>
+                          </ul>
                       </div>
                     </a>
-
-                  </li>
-                  <li class="supply__li">
-                    
-                    <a href="" class="card">
-                      <div class="container card-border_grey">
-                        <div class="row">
-                          <div class="col-xs-4 col-sm-4 card-pad_l_4px">
-                            <img class="card__img" src="./img/car-1.jpg">
-                          </div>
-                          <div class="col-xs-8 col-sm-8 card__card_text card-pad-l-none">
-                            <span class="card_text__date">21.12.16</span>
-                            <h2 class="card_text__name">Mercedes-Benz E-Class</h2>
-                            <p class="card_text__price">1 250 000 руб.</p>
-                            <ul class="card_text__other">
-                              <li>2006 г.в.</li>
-                              <li>246 л.с.</li>
-                              <li>101 км</li>
-                            </ul>
-                          </div>
-                        </div>  
+                  </div>
+                  <div class="clearfix visible-sm-block"></div>
+                  <div class="clearfix visible-xs-block"></div>
+                  <div class="cards__li col-xs-12 col-sm-6">
+                    <a href="" class="">
+                      <div class="card card__img card__img-style">
+                        <img class="card__img-size img-responsive" src="./img/car-1.jpg">
+                      </div>
+                      <div class="card card__text card-style">
+                        <span class="card__text-date">21.12.16</span>
+                          <h2 class="card__text-name">Mercedes-Benz E-Class zupper automobile Deutsch</h2>
+                          <p class="card__text-price">1 250 000 руб.</p>
+                          <ul class="card__text-character">
+                            <li>2006 г.в.</li>
+                            <li>246 л.с.</li>
+                            <li>101 км</li>
+                          </ul>
                       </div>
                     </a>
+                  </div>
+                  <div class="clearfix visible-xs-block"></div>
+                  <div class="cards__li col-xs-12 col-sm-6">
+                    <a href="" class="">
+                      <div class="card card__img card__img-style">
+                        <img class="card__img-size img-responsive" src="./img/car-1.jpg">
+                      </div>
+                      <div class="card card__text card-style">
+                        <span class="card__text-date">21.12.16</span>
+                          <h2 class="card__text-name">Mercedes-Benz E-Class zupper automobile Deutsch</h2>
+                          <p class="card__text-price">1 250 000 руб.</p>
+                          <ul class="card__text-character">
+                            <li>2006 г.в.</li>
+                            <li>246 л.с.</li>
+                            <li>101 км</li>
+                          </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="clearfix visible-sm-block"></div>
+                  <div class="clearfix visible-xs-block"></div>
+                  <div class="cards__li col-xs-12 col-sm-6">
+                    <a href="" class="">
+                      <div class="card card__img card__img-style">
+                        <img class="card__img-size img-responsive" src="./img/car-1.jpg">
+                      </div>
+                      <div class="card card__text card-style">
+                        <span class="card__text-date">21.12.16</span>
+                          <h2 class="card__text-name">Mercedes-Benz E-Class zupper automobile Deutsch</h2>
+                          <p class="card__text-price">1 250 000 руб.</p>
+                          <ul class="card__text-character">
+                            <li>2006 г.в.</li>
+                            <li>246 л.с.</li>
+                            <li>101 км</li>
+                          </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="clearfix visible-xs-block"></div>
+                  <div class="cards__li col-xs-12 col-sm-6">
+                    <a href="" class="">
+                      <div class="card card__img card__img-style">
+                        <img class="card__img-size img-responsive" src="./img/car-1.jpg">
+                      </div>
+                      <div class="card card__text card-style">
+                        <span class="card__text-date">21.12.16</span>
+                          <h2 class="card__text-name">Mercedes-Benz E-Class zupper automobile Deutsch</h2>
+                          <p class="card__text-price">1 250 000 руб.</p>
+                          <ul class="card__text-character">
+                            <li>2006 г.в.</li>
+                            <li>246 л.с.</li>
+                            <li>101 км</li>
+                          </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="clearfix visible-sm-block"></div>
+                  <div class="clearfix visible-xs-block"></div>
+                  <div class="cards__li col-xs-12 col-sm-6">
+                    <a href="" class="">
+                      <div class="card card__img card__img-style">
+                        <img class="card__img-size img-responsive" src="./img/car-1.jpg">
+                      </div>
+                      <div class="card card__text card-style">
+                        <span class="card__text-date">21.12.16</span>
+                          <h2 class="card__text-name">Mercedes-Benz E-Class zupper automobile Deutsch</h2>
+                          <p class="card__text-price">1 250 000 руб.</p>
+                          <ul class="card__text-character">
+                            <li>2006 г.в.</li>
+                            <li>246 л.с.</li>
+                            <li>101 км</li>
+                          </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="clearfix visible-xs-block"></div>
+                  <div class="cards__li col-xs-12 col-sm-6">
+                    <a href="" class="">
+                      <div class="card card__img card__img-style">
+                        <img class="card__img-size img-responsive" src="./img/car-1.jpg">
+                      </div>
+                      <div class="card card__text card-style">
+                        <span class="card__text-date">21.12.16</span>
+                          <h2 class="card__text-name">Mercedes-Benz E-Class zupper automobile Deutsch</h2>
+                          <p class="card__text-price">1 250 000 руб.</p>
+                          <ul class="card__text-character">
+                            <li>2006 г.в.</li>
+                            <li>246 л.с.</li>
+                            <li>101 км</li>
+                          </ul>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="clearfix visible-sm-block"></div>
+                  <div class="clearfix visible-xs-block"></div>
 
-                  </li>
-                  <li class="supply__li"></li>
-                </ul>
+                </div>
               </div>
+
+<!-- Контент табов, 3 блок -->
               <div role="tabpanel" class="tab-pane" id="messages">
                 Code third tab
               </div>
             </div>
+
+<!-- Кнопки регионов и подачи объявления -->
             <div class="region ">
                   <a class="region__btn" href="">Выбрать регион</a>
                 </div>
                 <div class="give_ad">
                   <a class="region__btn region__btn-red" href="">Подать объявление</a>
                 </div>
-        </div>
+      </div>
     </div>
       
 
