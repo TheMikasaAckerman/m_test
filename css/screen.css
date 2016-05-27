@@ -165,42 +165,43 @@ a:hover {
   border-bottom: 4px solid #2B2A29;
   height: 44px;
   width: 33.333%;
+  font-size: 87.5%;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .slider > ul > li.active {
   border-top: 4px solid #f33535;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .slider__li:first-child {
   border-left: none;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   background-color: #2B2A29;
   border: none;
   border-bottom: 0px;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .nav > li > a {
   width: 100%;
   padding: 10px 0;
   text-align: center;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .tab_body {
   background-color: #2B2A29;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .find {
   padding: 20px 12px 0;
 }
-/* line 118, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .find__input {
   width: 84%;
   padding: 0 0 0 4%;
@@ -210,7 +211,7 @@ a:hover {
   background-color: #3d3a3a;
   float: left;
 }
-/* line 127, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .find__submit {
   width: 16%;
   height: 30px;
@@ -219,38 +220,44 @@ a:hover {
   float: left;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .menu__li {
   height: 120px;
   text-align: center;
   border-left: 1px solid #3d3c3b;
   border-bottom: 1px solid #3d3c3b;
 }
-/* line 143, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .menu__img {
   margin-top: 40px;
   margin-bottom: 5px;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .menu__li:nth-child(2n+1) {
   border-left: none;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .clear {
   clear: both;
 }
 
-/* line 158, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .region__btn {
   padding: 16px 0;
   width: 100%;
   text-align: center;
   display: block;
 }
+/* line 164, ../sass/screen.scss */
+.region__btn-red {
+  background: #f33535;
+  width: 92%;
+  margin: 4%;
+}
 
-/* line 167, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .btn {
   width: 100%;
   padding: 4% 0;
@@ -259,62 +266,62 @@ a:hover {
   font-size: 1em;
   display: block;
 }
-/* line 174, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .btn__filter {
   border-bottom: 1px solid #cccccc;
 }
 
-/* line 182, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .cards {
   background: #ffffff;
 }
-/* line 184, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .cards__li {
   border-bottom: 1px solid #cccccc;
   padding: 2% 2%;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .card {
   float: left;
 }
-/* line 194, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .card__img {
   width: 37.5%;
   height: auto;
 }
-/* line 202, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 .card__text {
   width: 58%;
   margin-left: 3%;
   color: #000000;
 }
-/* line 206, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .card__text-date {
   font-size: 12px;
   font-weight: 500;
   color: #999999;
 }
-/* line 211, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .card__text-name {
   font-size: 13px;
   font-weight: 600;
   color: #000000;
   margin-top: 3%;
 }
-/* line 217, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .card__text-price {
   font-size: 13px;
   font-weight: 600;
   color: #f33535;
   margin-top: 3%;
 }
-/* line 223, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .card__text-character {
   margin-left: -4%;
   margin-top: 6%;
 }
-/* line 226, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .card__text-character li {
   font-size: 12px;
   color: #000000;
@@ -322,26 +329,46 @@ a:hover {
   margin-left: 4%;
 }
 
-/* line 237, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 .cabinet {
   padding: 8% 4%;
 }
-/* line 239, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .cabinet__h2 {
   font-size: 125%;
 }
-/* line 243, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
+.cabinet__form-group {
+  margin-top: 4%;
+}
+/* line 251, ../sass/screen.scss */
+.cabinet__form-group > label {
+  margin-bottom: 2%;
+  font-size: 87.5%;
+}
+/* line 255, ../sass/screen.scss */
+.cabinet__form-group-style {
+  border-radius: 0px;
+}
+/* line 259, ../sass/screen.scss */
+.cabinet__reg {
+  padding: 4% 0;
+  font-size: 87.5%;
+}
+/* line 263, ../sass/screen.scss */
 .cabinet__rel {
   position: relative;
+  margin-top: 8%;
+  font-size: 87.5%;
   height: 40px;
   text-align: center;
 }
-/* line 248, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .cabinet__social_text {
   position: relative;
-  padding: 0 0 20px 0;
+  padding: 0 0 2% 0;
 }
-/* line 251, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .cabinet__social_text-in {
   display: inline-block;
   position: relative;
@@ -350,7 +377,7 @@ a:hover {
   height: 20px;
   z-index: 1;
 }
-/* line 260, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .cabinet__social_text:after {
   width: 100%;
   content: '';
@@ -361,40 +388,45 @@ a:hover {
   display: block;
   overflow: hidden;
 }
-/* line 270, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 .cabinet__social_icons {
   margin: 0 auto;
 }
-/* line 273, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .cabinet__btn-form {
   background: #f33535;
   color: #ffffff;
   border: none;
 }
 
-/* line 279, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .social_icon {
   width: 28px;
   height: 28px;
   display: inline-block;
 }
 
-/* line 285, ../sass/screen.scss */
-.vk, .fb, .ya, .gm {
+/* line 307, ../sass/screen.scss */
+.vk {
   background: url("../img/color-icons.png") -30px 0 no-repeat;
 }
 
-/* line 289, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 .fb {
   background: url("../img/color-icons.png") 0 0 no-repeat;
 }
 
-/* line 292, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 .ya {
   background: url("../img/color-icons.png") -120px 0 no-repeat;
 }
 
-/* line 295, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .gm {
   background: url("../img/color-icons.png") -90px 0 no-repeat;
+}
+
+/* line 320, ../sass/screen.scss */
+.center-text {
+  text-align: center;
 }
