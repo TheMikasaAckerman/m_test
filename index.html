@@ -48,7 +48,7 @@
             <div class="tab-content tab_body">
 
 <!-- Контент табов, 1 блок -->
-              <div role="tabpanel" class="tab-pane active" id="home">
+              <div role="tabpanel" class="tab-pane" id="home">
 
                 <!-- Форма поиска -->
                 <div class="find">
@@ -102,11 +102,19 @@
               </div>
 
 <!-- Контент табов, 2 блок -->
-              <div role="tabpanel" class="tab-pane" id="profile">
-                <h2>Автомобили</h2>
-                
+              <div role="tabpanel" class="tab-pane tab-relative active" id="profile">
+                <h2 class="tab-pane__h2">Автомобили</h2>
+                <!-- Форма поиска -->
+                <div class="find">
+                  <form>
+                    <input class="find__input" type="text" placeholder="Поиск по Северобайкальску">
+                    <button class="find__submit" type="submit" value="ок">Найти</button>
+                    <div class="clearfix"></div>
+                  </form>
+                </div>
+
                 <div class="cards">
-                  <a href="" class="btn btn__filter">Фильтры</a>
+                  <a href="#openFilter" class="btn btn__filter">Фильтры</a>
 
                   <div class="cards__li col-xs-12 col-sm-6">
                     <a href="" class="">
@@ -256,7 +264,72 @@
                   </div>
                   <div class="clearfix visible-sm-block"></div>
                   <div class="clearfix visible-xs-block"></div>
+                </div>
 
+                <div class="filter-block" id="openFilter">
+                  <h3 class="filter-block__h3">Фильтр автомобилей</h3>
+                  <a href="#close" class="filter-block__close"><i class="fa fa-times" aria-hidden="true"></i>
+</a>
+                  <form class="filter-form" action="">
+                    <div class="filter-block__group filter-block__select">
+                      <label class="filter-block__label" for="inputSelectMark">Марка</label>
+                      <select class="form-control" id="inputSelectMark">
+                        <option>Пункт 1</option>
+                        <option>Пункт 2</option>
+                      </select>
+                    </div>
+
+                    <div class="filter-block__group filter-block__select">
+                      <label class="filter-block__label"  for="inputSelectModel">Модель</label>
+                      <select class="form-control" id="inputSelectModel">
+                        <option>Пункт 1</option>
+                        <option>Пункт 2</option>
+                      </select>
+                    </div>
+
+                    <div class="filter-block__group filter-block__input-x2">
+                      <label class="filter-block__label"  for="inputPriceFrom">Цена, руб</label>
+                      <div>
+                        <input type="text" class="form-control" id="inputPriceFrom" placeholder="от">
+                        <input type="text" class="form-control" id="inputPriceTo" placeholder="до">
+                      </div>
+                    </div>
+
+                    <div class="filter-block__group filter-block__input-x2">
+                      <label class="filter-block__label"  for="inputYearFrom">Год</label>
+                      <div>
+                        <input type="text" class="form-control" id="inputYearFrom" placeholder="от">
+                        <input type="text" class="form-control" id="inputYearTo" placeholder="до">
+                      </div>
+                    </div>
+
+                    <div class="filter-block__group filter-block__input-x2">
+                      <label class="filter-block__label"  for="inputVolume">Объем, л</label>
+                      <div>
+                        <input type="text" class="form-control" id="inputVolumeFrom" placeholder="от">
+                        <input type="text" class="form-control" id="inputVolumeTo" placeholder="до">
+                      </div>
+                    </div>
+
+                    <div class="filter-block__group filter-block__select-x2">
+                      <label class="filter-block__label"  for="inputSelectModel">Модель</label>
+                      <select class="form-control" id="inputSelectModel">
+                        <option>Пункт 1</option>
+                        <option>Пункт 2</option>
+                      </select>
+                    </div>
+
+                    <div class="filter-block__group filter-block__select-x2">
+                      <label class="filter-block__label"  for="inputSelectModel">Модель</label>
+                      <select class="form-control" id="inputSelectModel">
+                        <option>Пункт 1</option>
+                        <option>Пункт 2</option>
+                      </select>
+                    </div>
+
+                  
+                  <button type="submit" class="btn btn-default cabinet__btn-form filter-block__btn-form">Показать</button>
+                  </form>
                 </div>
               </div>
 
@@ -265,12 +338,12 @@
                 <h2 class="cabinet__h2 center-text">Войти</h2>
                 <form>
                   <div class="form-group cabinet__form-group">
-                    <label for="exampleInputEmail1">Е-мейл</label>
-                    <input type="email" class="form-control cabinet__form-group-style" id="exampleInputEmail1" placeholder="Email">
+                    <label for="inputEmail">Е-мейл</label>
+                    <input type="email" class="form-control cabinet__form-group-style" id="inputEmail" placeholder="Email">
                   </div>
                   <div class="form-group cabinet__form-group">
-                    <label for="exampleInputPassword1">Пароль</label>
-                    <input type="password" class="form-control cabinet__form-group-style" id="exampleInputPassword1" placeholder="Password">
+                    <label for="inputPassword">Пароль</label>
+                    <input type="password" class="form-control cabinet__form-group-style" id="inputPassword" placeholder="Password">
                   </div>
                   <button type="submit" class="btn btn-default cabinet__btn-form">Войти</button>
                 </form>
@@ -309,6 +382,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- <script src="/assets/bootstrap/js/bootstrap.min.js"></script> -->
+
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="https://use.fontawesome.com/eb337f86bb.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
+    </script>
   </body>
 </html>

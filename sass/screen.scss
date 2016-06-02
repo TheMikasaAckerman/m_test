@@ -19,6 +19,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background: #000; 
+	overflow: hidden;
 }
 
 a {color: #ffffff;
@@ -111,10 +112,11 @@ a {color: #ffffff;
 .tab_body {
 	background-color: $bg-color-dark-grey;
 	// height: 600px;
+	padding: 2% 0;
 }
 
 .find {
-padding: 20px 12px 0;
+padding: 2% 2%;
 
 	&__input {
 		width: 84%;
@@ -126,11 +128,13 @@ padding: 20px 12px 0;
 		float: left;
 	}
 	&__submit {
+		display: block;
 		width: 16%;
 		height: 30px;
 		background-color: $red;
 		border: none;
 		float: left;
+		color: $text-white;
 	}
 }
 
@@ -183,7 +187,12 @@ padding: 20px 12px 0;
 }
 
 
-// Карточки вертска
+// Список авто
+
+.tab-pane__h2 {
+	font-size: 125%;
+	padding: 4% 2% 0%;
+}
 
 .cards {
 	background: $bg-color-white;
@@ -247,7 +256,7 @@ padding: 20px 12px 0;
 
 	}
 	&__form-group {
-		margin-top: 4%;
+		margin-top: 2%;
 		&>label {
 			margin-bottom: 2%;
 			font-size:87.5%;
@@ -377,6 +386,7 @@ padding: 20px 12px 0;
 	}
 	&__t-info {
 		width: 100%;
+		height: 100%;
 		font-size: 85%;
 		line-height: 1.8;
 		color: $text-black;
@@ -391,4 +401,73 @@ padding: 20px 12px 0;
 			color: $text-medium-grey;
 		}
 	}
+}
+.tab-relative {
+	position: relative;
+}
+
+
+.filter-block {
+	background: #fff;
+	width: 100%;
+	padding: 4%;
+	position: fixed;
+    bottom: 0; left: 0; top: 0; right: 0;
+    /* если в модальном окне много содержимого, показываем скроллбар */
+    overflow: auto;
+    /* однопальцевый скролл для iPad*/
+    -webkit-overflow-scrolling: touch;
+	z-index: 99999;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	display: none;
+	pointer-events: none;
+
+	&__h3 {
+		font-size: 125%;
+		color: $text-black;
+	}
+	&__close {
+		display: block;
+		position: absolute;
+		right: 16px;
+		top: 16px;
+		font-size: 100%;
+		color: $red;
+		&:hover {
+			color: $text-black;
+		}
+	}
+	&__group {
+		margin-top: 2%;
+	}
+	&__btn-form {
+		margin-top: 6%;
+		margin-bottom: 4%;
+	}
+	&__label {
+			color: $text-black;
+			font-size: 75%;
+			margin-top: 3%;
+			margin-bottom: 2%;
+		}
+	&__select {
+		width: 100%;	
+	}
+	&__select-x2 {
+		width: 49%;
+		display: inline-block;
+	}
+	&__input-x2 >div>input {
+		width: 49%;
+		display: inline-block;
+	}
+	&__input-x2 >div>input:first-child {
+		margin-left: 0;
+	}
+}
+.filter-block:target {
+	display: block;
+	pointer-events: auto;
 }
