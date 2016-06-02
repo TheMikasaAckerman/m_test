@@ -119,17 +119,18 @@ a {color: #ffffff;
 padding: 2% 2%;
 
 	&__input {
-		width: 84%;
+		width: 75%;
 		padding: 0 0 0 4%;
 		height: 30px;
 		border: 1px solid #979797;
 		border-right: none;
 		background-color: #3d3a3a;
 		float: left;
+		font-size: 75%;
 	}
 	&__submit {
 		display: block;
-		width: 16%;
+		width: 25%;
 		height: 30px;
 		background-color: $red;
 		border: none;
